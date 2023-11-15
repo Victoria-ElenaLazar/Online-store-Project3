@@ -142,7 +142,7 @@ class CartController
 
         $_SESSION['cart_count'] = 0;
 
-        header("Location: http://localhost/online_store-app/Views/checkout.php");
+        header("Location: Views/checkout.php");
         exit();
     }
 

@@ -32,10 +32,10 @@ class UsersController
             if ($userData && password_verify($password, $userData['user_password'])) {
                 $_SESSION['user_id'] = $userData['user_id'];
                 $_SESSION['user_email'] = $userData['user_email'];
-                header("Location: http://localhost/online_store-app/public/index.php");
+                header("Location: public/index.php");
             } else {
                 $_SESSION['error_message'] = "Invalid email or password. Please try again or register!";
-                header("Location: http://localhost/online_store-app/Views/login.php");
+                header("Location: Views/login.php");
                 exit();
             }
         }
@@ -53,7 +53,7 @@ class UsersController
 
         session_destroy();
 
-        header("Location: http://localhost/online_store-app/Views/login.php");
+        header("Location: Views/login.php");
         exit();
     }
 
