@@ -1,0 +1,19 @@
+{
+  "name": "online_store/flowers_store",
+  "description": "online flowers store",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "OnlineStore\\FlowersStore\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Victoria Smaranda",
+      "email": "victoria.elena01@yahoo.com"
+    }
+  ],
+  "require": {
+    "ext-pdo": "*"
+  }
+}
